@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--
+    Pagina de carga de una aplicacin basica en WebGL
+-->
+
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title> Aplicacion basica en WebGL </title>
+        <style>
+            body{ background-color: white;
+                  margin: 0px;
+                  overflow: hidden;
+                }
+            canvas { background-color: white;}    
+        </style>
+    </head>
+    <body onload="main()">
+        <canvas id="canvas_ejemplo" width="500" height="400"></canvas>
+        <!-- scripts de biblioteca -->
+        <script src="lib/webgl-utils.js"></script>
+        <script src="lib/webgl-debug.js"></script>
+        <script src="lib/cuon-utils.js"></script>
+        <script src="lib/cuon-matrix.js"></script>
+
+        <!-- mi script -->
+        <script src="js/dibujarPuntos.js"></script>
+    </body>
+</html>
