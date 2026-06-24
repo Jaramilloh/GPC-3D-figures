@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GPC — 3D Figures</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap">
+  <style>
+*{box-sizing:border-box}
+    html,body{margin:0;padding:0}
+    a{text-decoration:none;color:inherit}
+    ::selection{background:#c2f04a;color:#0b0d0c}
+  </style>
+</head>
+<body>
+<div style="min-height:100vh;background:#0b0d0c;color:#e8ece9;font-family:'Space Grotesk',system-ui,sans-serif;background-image:radial-gradient(rgba(255,255,255,0.035) 1px, transparent 1px);background-size:34px 34px;overflow-x:hidden">
+
+  <!-- NAV -->
+  <header style="position:sticky;top:0;z-index:50;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);background:rgba(11,13,12,0.72);border-bottom:1px solid rgba(255,255,255,0.07)">
+    <div style="max-width:1200px;margin:0 auto;padding:15px 32px;display:flex;align-items:center;justify-content:space-between;gap:16px">
+      <a href="https://jaramilloh.github.io/GPC-3D-figures/" style="display:flex;align-items:center;gap:10px;font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:0.04em">
+        <span style="width:9px;height:9px;border-radius:50%;background:#c2f04a;box-shadow:0 0 12px rgba(194,240,74,0.7);display:inline-block"></span>
+        <span style="color:#e8ece9">GPC<span style="color:#6f786f">·</span>3D</span>
+      </a>
+      <nav style="display:flex;align-items:center;gap:26px;font-family:'JetBrains Mono',monospace;font-size:12.5px;color:#9aa39b">
+        <a href="#robotic-arm" style="transition:color .2s" style-hover="color:#e8ece9">Robotic&nbsp;Arm</a>
+        <a href="#fenobot" style="transition:color .2s" style-hover="color:#e8ece9">FENOBOT</a>
+        <a href="https://github.com/Jaramilloh/GPC-3D-figures" target="_blank" style="transition:color .2s" style-hover="color:#c2f04a">Repository&nbsp;↗</a>
+        <a href="https://jaramilloh.github.io/personal-portfolio-webpage-design/" target="_blank" style="transition:color .2s" style-hover="color:#c2f04a">Portfolio&nbsp;↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section style="max-width:1200px;margin:0 auto;padding:84px 32px 60px;display:flex;flex-wrap:wrap;gap:56px;align-items:center">
+    <div style="flex:1 1 460px;min-width:320px">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:12.5px;letter-spacing:0.18em;color:#c2f04a;margin-bottom:22px">// COMPUTER&nbsp;GRAPHICS · 3D&nbsp;FIGURES</div>
+      <h1 style="margin:0;font-size:clamp(40px,5.4vw,68px);font-weight:600;line-height:1.02;letter-spacing:-0.025em;text-wrap:balance">Real-time 3D,<br><span style="color:#c2f04a">built from scratch.</span></h1>
+      <p style="margin:26px 0 0;max-width:520px;font-size:18px;line-height:1.55;color:#aab2aa;text-wrap:pretty">A set of computer-graphics applications written in <span style="color:#e8ece9">three.js</span> and <span style="color:#e8ece9">WebGL</span> — from a fully articulated robotic arm to <span style="color:#e8ece9">FENOBOT</span>, an autonomous phenotyping robot for precision agriculture.</p>
+
+      <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:28px">
+        <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#9aa39b;padding:6px 13px;border:1px solid rgba(255,255,255,0.13);border-radius:999px">three.js</span>
+        <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#9aa39b;padding:6px 13px;border:1px solid rgba(255,255,255,0.13);border-radius:999px">WebGL</span>
+        <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#9aa39b;padding:6px 13px;border:1px solid rgba(255,255,255,0.13);border-radius:999px">JavaScript</span>
+        <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#9aa39b;padding:6px 13px;border:1px solid rgba(255,255,255,0.13);border-radius:999px">MSc AI · UPV València</span>
+      </div>
+
+      <div style="display:flex;flex-wrap:wrap;gap:14px;margin-top:34px">
+        <a href="proyecto.html" target="_blank" style="display:inline-flex;align-items:center;gap:9px;background:#c2f04a;color:#0b0d0c;font-weight:600;font-size:15px;padding:13px 22px;border-radius:5px;transition:transform .15s,box-shadow .2s" style-hover="transform:translateY(-2px);box-shadow:0 10px 30px rgba(194,240,74,0.25)">Launch&nbsp;FENOBOT <span style="font-family:'JetBrains Mono',monospace">→</span></a>
+        <a href="#robotic-arm" style="display:inline-flex;align-items:center;gap:9px;color:#e8ece9;font-weight:500;font-size:15px;padding:13px 22px;border-radius:5px;border:1px solid rgba(255,255,255,0.16);transition:border-color .2s,background .2s" style-hover="border-color:rgba(255,255,255,0.4);background:rgba(255,255,255,0.03)">Browse the robotic arm</a>
+      </div>
+    </div>
+
+    <!-- WIREFRAME PANEL -->
+    <div style="flex:1 1 360px;min-width:300px;display:flex;justify-content:center">
+      <div style="position:relative;width:100%;max-width:440px;aspect-ratio:1/1;border:1px solid rgba(255,255,255,0.1);border-radius:6px;background:radial-gradient(circle at 50% 44%, rgba(194,240,74,0.07), transparent 62%), #0e110f;overflow:hidden">
+        <canvas id="hero-canvas" style="position:absolute;inset:0;width:100%;height:100%"></canvas>
+        <div style="position:absolute;top:14px;left:16px;font-family:'JetBrains Mono',monospace;font-size:11px;color:#6f786f;letter-spacing:0.04em">icosahedron.wireframe</div>
+        <div style="position:absolute;bottom:14px;right:16px;font-family:'JetBrains Mono',monospace;font-size:11px;color:#6f786f;letter-spacing:0.04em">render · realtime</div>
+        <div style="position:absolute;bottom:14px;left:16px;font-family:'JetBrains Mono',monospace;font-size:11px;color:#c2f04a;letter-spacing:0.04em">● live</div>
+        <span style="position:absolute;top:12px;left:12px;width:14px;height:14px;border-top:1px solid rgba(255,255,255,0.25);border-left:1px solid rgba(255,255,255,0.25)"></span>
+        <span style="position:absolute;top:12px;right:12px;width:14px;height:14px;border-top:1px solid rgba(255,255,255,0.25);border-right:1px solid rgba(255,255,255,0.25)"></span>
+        <span style="position:absolute;bottom:12px;left:12px;width:14px;height:14px;border-bottom:1px solid rgba(255,255,255,0.25);border-left:1px solid rgba(255,255,255,0.25)"></span>
+        <span style="position:absolute;bottom:12px;right:12px;width:14px;height:14px;border-bottom:1px solid rgba(255,255,255,0.25);border-right:1px solid rgba(255,255,255,0.25)"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED: FENOBOT -->
+  <section id="fenobot" style="max-width:1200px;margin:0 auto;padding:52px 32px;scroll-margin-top:80px">
+    <div style="display:flex;align-items:center;gap:16px;margin-bottom:26px">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.16em;color:#9aa39b">FINAL&nbsp;PROJECT</span>
+      <span style="flex:1;height:1px;background:rgba(255,255,255,0.1)"></span>
+    </div>
+
+    <div style="display:flex;flex-wrap:wrap;gap:0;border:1px solid rgba(255,255,255,0.1);border-radius:8px;overflow:hidden;background:#101312">
+      <!-- preview -->
+      <div style="flex:1 1 460px;min-width:300px;position:relative;aspect-ratio:16/10;background:#0c0f0d;display:flex;align-items:center;justify-content:center;border-right:1px solid rgba(255,255,255,0.08);overflow:hidden">
+        <img src="images/screenshots/fenobot.webp" alt="FENOBOT autonomous phenotyping robot in a corn field" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+        <div style="position:absolute;inset:0;background:linear-gradient(to top, rgba(11,13,12,0.55), transparent 42%)"></div>
+        <div style="position:absolute;bottom:16px;right:18px;font-family:'JetBrains Mono',monospace;font-size:11px;color:#c2f04a;background:rgba(11,13,12,0.6);border:1px solid rgba(194,240,74,0.4);padding:4px 10px;border-radius:999px;backdrop-filter:blur(4px)">FENOBOT</div>
+      </div>
+      <!-- text -->
+      <div style="flex:1 1 340px;min-width:300px;padding:40px;display:flex;flex-direction:column;justify-content:center">
+        <h2 style="margin:0;font-size:clamp(30px,3.6vw,42px);font-weight:600;letter-spacing:-0.02em">FENOBOT</h2>
+        <p style="margin:16px 0 0;font-size:16px;line-height:1.6;color:#aab2aa;text-wrap:pretty">An autonomous phenotyping robot modelled in real-time 3D — built to navigate crop rows and capture plant data for precision agriculture. The capstone of the course, bringing together geometry, articulation, materials and camera control into one scene.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:22px">
+          <span style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:#9aa39b;padding:5px 11px;border:1px solid rgba(255,255,255,0.13);border-radius:999px">robotics</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:#9aa39b;padding:5px 11px;border:1px solid rgba(255,255,255,0.13);border-radius:999px">precision-agriculture</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:#9aa39b;padding:5px 11px;border:1px solid rgba(255,255,255,0.13);border-radius:999px">3d-models</span>
+        </div>
+        <a href="proyecto.html" target="_blank" style="display:inline-flex;align-items:center;gap:9px;margin-top:30px;align-self:flex-start;background:#c2f04a;color:#0b0d0c;font-weight:600;font-size:15px;padding:12px 20px;border-radius:5px;transition:transform .15s,box-shadow .2s" style-hover="transform:translateY(-2px);box-shadow:0 10px 30px rgba(194,240,74,0.25)">Launch demo <span style="font-family:'JetBrains Mono',monospace">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROBOTIC ARM -->
+  <section id="robotic-arm" style="max-width:1200px;margin:0 auto;padding:52px 32px 20px;scroll-margin-top:80px">
+    <div style="display:flex;align-items:center;gap:16px;margin-bottom:14px">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.16em;color:#9aa39b">THE&nbsp;ROBOTIC&nbsp;ARM</span>
+      <span style="flex:1;height:1px;background:rgba(255,255,255,0.1)"></span>
+      <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#6f786f">05&nbsp;iterations</span>
+    </div>
+    <p style="margin:0 0 34px;max-width:620px;font-size:16px;line-height:1.6;color:#aab2aa">An articulated arm, rebuilt five times — each iteration adding a new layer of the computer-graphics pipeline. Open any step to see it run live.</p>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(196px,1fr));gap:16px">
+
+      <a href="practica1.html" target="_blank" style="display:block;border:1px solid rgba(255,255,255,0.1);border-radius:7px;background:#101312;overflow:hidden;transition:transform .18s,border-color .2s" style-hover="transform:translateY(-4px);border-color:rgba(194,240,74,0.45)">
+        <div style="position:relative;aspect-ratio:4/3;background:#0c0f0d;overflow:hidden">
+          <img src="images/screenshots/practica1.webp" alt="Práctica 1 — Hello World wireframe text" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+        </div>
+        <div style="padding:16px 16px 18px">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:30px;font-weight:500;color:#c2f04a;line-height:1;letter-spacing:-0.02em">01</div>
+          <div style="margin-top:10px;font-size:15.5px;font-weight:600;color:#e8ece9">Hello World</div>
+          <div style="margin-top:4px;font-size:13px;line-height:1.45;color:#8c958d">First scene — points, lines &amp; the wireframe primitive.</div>
+          <div style="margin-top:14px;font-family:'JetBrains Mono',monospace;font-size:12px;color:#9aa39b">Open ↗</div>
+        </div>
+      </a>
+
+      <a href="practica2.html" target="_blank" style="display:block;border:1px solid rgba(255,255,255,0.1);border-radius:7px;background:#101312;overflow:hidden;transition:transform .18s,border-color .2s" style-hover="transform:translateY(-4px);border-color:rgba(194,240,74,0.45)">
+        <div style="position:relative;aspect-ratio:4/3;background:#0c0f0d;overflow:hidden">
+          <img src="images/screenshots/practica2.webp" alt="Práctica 2 — wireframe articulated arm over a terrain grid" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+        </div>
+        <div style="padding:16px 16px 18px">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:30px;font-weight:500;color:#c2f04a;line-height:1;letter-spacing:-0.02em">02</div>
+          <div style="margin-top:10px;font-size:15.5px;font-weight:600;color:#e8ece9">Articulation</div>
+          <div style="margin-top:4px;font-size:13px;line-height:1.45;color:#8c958d">Joint hierarchy &amp; transforms, shown in wireframe.</div>
+          <div style="margin-top:14px;font-family:'JetBrains Mono',monospace;font-size:12px;color:#9aa39b">Open ↗</div>
+        </div>
+      </a>
+
+      <a href="practica3.html" target="_blank" style="display:block;border:1px solid rgba(255,255,255,0.1);border-radius:7px;background:#101312;overflow:hidden;transition:transform .18s,border-color .2s" style-hover="transform:translateY(-4px);border-color:rgba(194,240,74,0.45)">
+        <div style="position:relative;aspect-ratio:4/3;background:#0c0f0d;overflow:hidden">
+          <img src="images/screenshots/practica3.webp" alt="Práctica 3 — solid shaded arm with normal materials" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+        </div>
+        <div style="padding:16px 16px 18px">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:30px;font-weight:500;color:#c2f04a;line-height:1;letter-spacing:-0.02em">03</div>
+          <div style="margin-top:10px;font-size:15.5px;font-weight:600;color:#e8ece9">Shading</div>
+          <div style="margin-top:4px;font-size:13px;line-height:1.45;color:#8c958d">Solid geometry &amp; normal-mapped surfaces.</div>
+          <div style="margin-top:14px;font-family:'JetBrains Mono',monospace;font-size:12px;color:#9aa39b">Open ↗</div>
+        </div>
+      </a>
+
+      <a href="practica4.html" target="_blank" style="display:block;border:1px solid rgba(255,255,255,0.1);border-radius:7px;background:#101312;overflow:hidden;transition:transform .18s,border-color .2s" style-hover="transform:translateY(-4px);border-color:rgba(194,240,74,0.45)">
+        <div style="position:relative;aspect-ratio:4/3;background:#0c0f0d;overflow:hidden">
+          <img src="images/screenshots/practica4.webp" alt="Práctica 4 — arm with live control panel for each joint" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+        </div>
+        <div style="padding:16px 16px 18px">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:30px;font-weight:500;color:#c2f04a;line-height:1;letter-spacing:-0.02em">04</div>
+          <div style="margin-top:10px;font-size:15.5px;font-weight:600;color:#e8ece9">Interaction</div>
+          <div style="margin-top:4px;font-size:13px;line-height:1.45;color:#8c958d">GUI controls to drive every joint &amp; animate.</div>
+          <div style="margin-top:14px;font-family:'JetBrains Mono',monospace;font-size:12px;color:#9aa39b">Open ↗</div>
+        </div>
+      </a>
+
+      <a href="practica5.html" target="_blank" style="display:block;border:1px solid rgba(255,255,255,0.1);border-radius:7px;background:#101312;overflow:hidden;transition:transform .18s,border-color .2s" style-hover="transform:translateY(-4px);border-color:rgba(194,240,74,0.45)">
+        <div style="position:relative;aspect-ratio:4/3;background:#0c0f0d;overflow:hidden">
+          <img src="images/screenshots/practica5.webp" alt="Práctica 5 — textured arm with environment lighting and shadows" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+        </div>
+        <div style="padding:16px 16px 18px">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:30px;font-weight:500;color:#c2f04a;line-height:1;letter-spacing:-0.02em">05</div>
+          <div style="margin-top:10px;font-size:15.5px;font-weight:600;color:#e8ece9">Environment</div>
+          <div style="margin-top:4px;font-size:13px;line-height:1.45;color:#8c958d">Textures, skybox, focal lights &amp; cast shadows.</div>
+          <div style="margin-top:14px;font-family:'JetBrains Mono',monospace;font-size:12px;color:#9aa39b">Open ↗</div>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="border-top:1px solid rgba(255,255,255,0.08);margin-top:64px">
+    <div style="max-width:1200px;margin:0 auto;padding:32px;display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#6f786f;line-height:1.7">
+        Computer Graphics · 3D Applications<br>
+        <span style="color:#566056">© 2026 Jaramilloh · MIT License · Universidad Politécnica de València</span>
+      </div>
+      <div style="display:flex;gap:24px;font-family:'JetBrains Mono',monospace;font-size:12.5px;color:#9aa39b">
+        <a href="https://github.com/Jaramilloh/GPC-3D-figures" target="_blank" style="transition:color .2s" style-hover="color:#c2f04a">GitHub ↗</a>
+        <a href="https://jaramilloh.github.io/personal-portfolio-webpage-design/" target="_blank" style="transition:color .2s" style-hover="color:#c2f04a">Portfolio ↗</a>
+        <a href="https://threejs.org/" target="_blank" style="transition:color .2s" style-hover="color:#c2f04a">three.js ↗</a>
+      </div>
+    </div>
+  </footer>
+
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  (function() {
+    const cv = document.querySelector('#hero-canvas');
+    if(!cv) return;
+    const size = 460;
+    const dpr = Math.min(window.devicePixelRatio || 1, 2);
+    cv.width = size * dpr;
+    cv.height = size * dpr;
+    const ctx = cv.getContext('2d');
+    ctx.scale(dpr, dpr);
+    const C = size / 2;
+
+    const phi = (1 + Math.sqrt(5)) / 2;
+    const verts = [
+      [0,1,phi],[0,-1,phi],[0,1,-phi],[0,-1,-phi],
+      [1,phi,0],[-1,phi,0],[1,-phi,0],[-1,-phi,0],
+      [phi,0,1],[-phi,0,1],[phi,0,-1],[-phi,0,-1]
+    ];
+    const edges = [];
+    for(let i=0;i<verts.length;i++){
+      for(let j=i+1;j<verts.length;j++){
+        const dx=verts[i][0]-verts[j][0], dy=verts[i][1]-verts[j][1], dz=verts[i][2]-verts[j][2];
+        if(Math.abs(Math.sqrt(dx*dx+dy*dy+dz*dz) - 2) < 0.1) edges.push([i,j]);
+      }
+    }
+
+    let a = 0;
+    const render = () => {
+      a += 0.0045;
+      ctx.clearRect(0,0,size,size);
+      const ax = a*0.62, ay = a;
+      const cx=Math.cos(ax), sx=Math.sin(ax), cy=Math.cos(ay), sy=Math.sin(ay);
+      const proj = verts.map(([x,y,z]) => {
+        const x1 = x*cy - z*sy;
+        const z1 = x*sy + z*cy;
+        const y1 = y*cx - z1*sx;
+        const z2 = y*sx + z1*cx;
+        const f = 3.2, camZ = 5;
+        const factor = f / (z2 + camZ);
+        return [C + x1*108*factor, C - y1*108*factor, z2];
+      });
+      ctx.lineWidth = 1.1;
+      edges.forEach(([i,j]) => {
+        const avgZ = (proj[i][2]+proj[j][2]) / 2;
+        const alpha = Math.max(0.08, Math.min(0.9, 0.25 + (avgZ+2)/4 * 0.6));
+        ctx.strokeStyle = 'rgba(194,240,74,' + alpha + ')';
+        ctx.beginPath();
+        ctx.moveTo(proj[i][0], proj[i][1]);
+        ctx.lineTo(proj[j][0], proj[j][1]);
+        ctx.stroke();
+      });
+      proj.forEach(p => {
+        const al = Math.max(0.22, Math.min(1, 0.4 + (p[2]+2)/4 * 0.5));
+        ctx.fillStyle = 'rgba(232,236,233,' + al + ')';
+        ctx.beginPath();
+        ctx.arc(p[0], p[1], 2.3, 0, Math.PI*2);
+        ctx.fill();
+      });
+      window._heroRaf = requestAnimationFrame(render);
+    };
+    render();
+  }
+  })();
+});
+</script>
+</body>
+</html>
